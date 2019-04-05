@@ -1,0 +1,60 @@
+/* basic token types */
+
+.CodeMirror {
+  --cm-atom                : #219;
+  --cm-attribute           : #00c;
+  --cm-background          : #fff;
+  --cm-bracket             : #997;
+  --cm-builtin             : #30a;
+  --cm-comment             : #a50;
+  --cm-cursor              : #000;
+  --cm-def                 : #00f;
+  --cm-error               : #f00;
+  --cm-foreground          : #000;
+  --cm-gutters             : #f7f7f7;
+  --cm-header              : #00f;
+  --cm-hr                  : #999;
+  --cm-invalidchar         : #f00;
+  --cm-keyword             : #708;
+  --cm-linenumber          : #999;
+  --cm-linenumber-active   : #555;
+  --cm-line-active         : #e8f2ff;
+  --cm-link                : #00c;
+  --cm-matching-bracket    : #0b0;
+  --cm-meta                : #555;
+  --cm-negative            : #d44;
+  --cm-nonmatching-bracket : #a22;
+  --cm-number              : #164;
+  --cm-operator            : #000;
+  --cm-positive            : #292;
+  --cm-property            : #000;
+  --cm-punctuation         : #000;
+  --cm-qualifier           : #555;
+  --cm-quote               : #090;
+  --cm-searching           : rgba(255, 255, 0, .4);
+  --cm-selected            : #d9d9d9;
+  --cm-selected-focused    : #d7d4f0;
+  --cm-string              : #a11;
+  --cm-string-2            : #f50;
+  --cm-tag                 : #170;
+  --cm-type                : #085;
+  --cm-variable            : #000;
+  --cm-variable-2          : #05a;
+  --cm-variable-3          : #085;
+}
+
+/* types defined by addons */
+
+.CodeMirror {
+  --cm-lint-error                   : rgba(255, 138, 101, 0.06);
+  --cm-lint-warning                 : rgba(253, 216, 53, 0.06);
+  --cm-lint-marker-error            : #f44336;
+  --cm-lint-marker-warning          : #ff9800;
+  --cm-matchhighlight               : lightgreen;
+  --cm-matchhighlight-outline       : none;
+  --cm-selection-highlight-scrollbar: green;
+  --cm-cursor-highlight-scrollbar   : #e91e63;
+  --cm-trailing-space               : hsl(36, 100%, 75%);
+  --cm-whitespace                   : hsla(0, 0%, 0%, 0.2);
+  --cm-cursor-width                 : 1px;
+}

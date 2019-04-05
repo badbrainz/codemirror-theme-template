@@ -1,0 +1,166 @@
+/* basics */
+
+.CodeMirror {
+  color: var(--cm-foreground);
+  background: var(--cm-background);
+}
+
+.cm-atom {
+  color: var(--cm-atom);
+}
+.cm-attribute {
+  color: var(--cm-attribute);
+}
+.cm-bracket {
+  color: var(--cm-bracket);
+}
+.cm-builtin {
+  color: var(--cm-builtin);
+}
+.cm-comment {
+  color: var(--cm-comment);
+}
+.cm-def {
+  color: var(--cm-def);
+}
+.cm-error {
+  color: var(--cm-error);
+}
+.cm-header {
+  color: var(--cm-header);
+}
+.cm-hr {
+  color: var(--cm-hr);
+}
+.cm-invalidchar {
+  color: var(--cm-invalidchar);
+}
+.cm-keyword {
+  color: var(--cm-keyword);
+}
+.cm-link {
+  color: var(--cm-link);
+}
+.cm-meta {
+  color: var(--cm-meta);
+}
+.cm-negative {
+  color: var(--cm-negative);
+}
+.cm-number {
+  color: var(--cm-number);
+}
+.cm-operator {
+  color: var(--cm-operator);
+}
+.cm-positive {
+  color: var(--cm-positive);
+}
+.cm-property {
+  color: var(--cm-property);
+}
+.cm-punctuation {
+  color: var(--cm-punctuation);
+}
+.cm-qualifier {
+  color: var(--cm-qualifier);
+}
+.cm-quote {
+  color: var(--cm-quote);
+}
+.cm-searching {
+  background-color: var(--cm-searching);
+}
+.cm-string {
+  color: var(--cm-string);
+}
+.cm-string-2 {
+  color: var(--cm-string-2);
+}
+.cm-tag {
+  color: var(--cm-tag);
+}
+.cm-variable {
+  color: var(--cm-variable);
+}
+.cm-variable-2 {
+  color: var(--cm-variable-2);
+}
+.cm-variable-3 {
+  color: var(--cm-variable-3);
+}
+
+/* cursor */
+
+.CodeMirror-cursor {
+  border-color: var(--cm-cursor);
+}
+.CodeMirror-cursor {
+  border-width: var(--cm-cursor-width);
+}
+.CodeMirror-cursor-highlight-scrollbar {
+  background-color: var(--cm-cursor-highlight-scrollbar);
+}
+
+/* gutters */
+
+.CodeMirror-gutters {
+  background-color: var(--cm-gutters);
+}
+.CodeMirror-linenumber {
+  color: var(--cm-linenumber);
+}
+.CodeMirror-activeline .CodeMirror-linenumber {
+  color: var(--cm-linenumber-active);
+}
+.CodeMirror-activeline .CodeMirror-activeline-background {
+  background-color: var(--cm-line-active);
+}
+
+/* highlights */
+
+.CodeMirror-selected {
+  background: var(--cm-selected);
+}
+.CodeMirror-focused .CodeMirror-selected {
+  background: var(--cm-selected-focused);
+}
+.CodeMirror-matchingbracket {
+  color: var(--cm-matching-bracket) !important;
+}
+.CodeMirror-nonmatchingbracket {
+  color: var(--cm-nonmatching-bracket) !important;
+}
+
+/* addons, modes etc. */
+
+.cm-trailingspace {
+  background-color: var(--cm-trailing-space);
+}
+
+.cm-matchhighlight:not(.CodeMirror-selectedtext) {
+  background-color: var(--cm-matchhighlight);
+  box-shadow: var(--cm-matchhighlight-outline);
+}
+.CodeMirror-selection-highlight-scrollbar {
+  background-color: var(--cm-selection-highlight-scrollbar);
+}
+
+.CodeMirror-lint-error {
+  background-color: var(--cm-lint-error);
+}
+.CodeMirror-lint-warning {
+  background-color: var(--cm-lint-warning);
+}
+.CodeMirror-lint-error .CodeMirror-lint-icon {
+  color: var(--cm-lint-marker-error);
+}
+.CodeMirror-lint-warning .CodeMirror-lint-icon {
+  color: var(--cm-lint-marker-warning);
+}
+.CodeMirror-lint-error .CodeMirror-lint-marker {
+  border-bottom-color: var(--cm-lint-marker-error);
+}
+.CodeMirror-lint-warning .CodeMirror-lint-marker {
+  border-bottom-color: var(--cm-lint-marker-warning);
+}

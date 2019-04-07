@@ -5,8 +5,8 @@ Create a CodeMirror syntax theme based on a set of CSS variables.
 
 Include the neccessary files:
 ```html
-<style src="variables.css"></style>
-<style src="tokens.css"></style>
+<link rel="stylesheet" href="variables.css">
+<link rel="stylesheet" href="tokens.css">
 ```
 
 Specify your colors using variables that are defined in *variables.css*:

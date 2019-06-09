@@ -71,7 +71,7 @@ async function main() {
   CodeMirror(element)
   
   toggleDark.addEventListener('click', () => setStyle(darkCSS))
-  toggleLight.addEventListener('click', () => setStyle(lightCSS))
+  toggleLight.addEventListener('click', () => setStyle(liteCSS))
 }
 
 main()

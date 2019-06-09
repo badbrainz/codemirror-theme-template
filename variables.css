@@ -57,4 +57,6 @@
   --cm-trailing-space               : hsl(36, 100%, 75%);
   --cm-whitespace                   : hsla(0, 0%, 0%, 0.2);
   --cm-cursor-width                 : 1px;
+  --cm-scrollbar-track              : #f7f7f7;
+  --cm-scrollbar-thumb              : #bcd;
 }

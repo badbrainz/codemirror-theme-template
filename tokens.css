@@ -164,3 +164,22 @@
 .CodeMirror-lint-warning .CodeMirror-lint-marker {
   border-bottom-color: var(--cm-lint-marker-warning);
 }
+
+/* scroll */
+
+.CodeMirror-simplescroll-horizontal,
+.CodeMirror-simplescroll-vertical,
+.CodeMirror-overlayscroll-horizontal,
+.CodeMirror-overlayscroll-vertical {
+  background-color: var(--cm-scrollbar-track);
+}
+
+.CodeMirror-simplescroll-horizontal div,
+.CodeMirror-simplescroll-vertical div {
+  background-color: var(--cm-scrollbar-thumb);
+}
+
+.CodeMirror-overlayscroll-horizontal div,
+.CodeMirror-overlayscroll-vertical div {
+  background-color: var(--cm-scrollbar-thumb);
+}

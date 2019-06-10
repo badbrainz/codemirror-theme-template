@@ -30,48 +30,49 @@ The same can be acheived with [Constructable Stylesheets](https://wicg.github.io
 ```css
 /* dark.css */
 .CodeMirror {
-  /* specify colors */
+  --cm-atom       : hsl(39, 67%, 69%);
+  --cm-attribute  : hsl(39, 67%, 69%);
+  /* etc. */
 }
 ```
 ```css
 /* lite.css */
 .CodeMirror {
-  /* specify colors */
+  --cm-atom       : hsl(39, 67%, 69%);
+  --cm-attribute  : hsl(39, 67%, 69%);
+  /* etc. */
 }
 ```
 ```js
-// Load reusable styles into CSSStyleSheet objects
-function importStyles(styles) {
+// Load files into CSSStyleSheet objects
+function importStyles(urls) {
   const sheet = new CSSStyleSheet()
   const css = [styles].flat().map(url => `@import url("${url}");`).join('\n')
   return sheet.replace(css)
 }
 
-// Load required styles
+// Create reusable css
+let darkCSS = importStyles('/dark.css')
+let liteCSS = importStyles('/lite.css')
 let baseCSS = importStyles([
   '/libs/codemirror/lib/codemirror.css',
   '/variables.css',
   '/tokens.css'
 ])
 
-// Load alternate colors
-let darkCSS = importStyles('/dark.css')
-let liteCSS = importStyles('/lite.css')
-
-// Redefine css variables with a CSSStyleSheet object
-async function setStyle(css) {
-  document.adoptedStyleSheets = [
+// Swap colors by changing 'adoptedStyleSheets'
+async function setStyle(documentOrShadowroot, css) {
+  documentOrShadowroot.adoptedStyleSheets = [
     await baseCSS,
     await css
   ]
 }
 
 async function main() {
-  document.adoptedStyleSheets = [await baseCSS]
+  await setStyle(document, darkCSS)
   CodeMirror(element)
   
-  toggleDark.addEventListener('click', () => setStyle(darkCSS))
-  toggleLight.addEventListener('click', () => setStyle(liteCSS))
+  // await setStyle(document, liteCSS)
 }
 
 main()

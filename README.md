@@ -7,7 +7,7 @@ Create a CodeMirror syntax theme based on a set of CSS variables.
 ## Instructions
 Specify your colors (see *variables.css*):
 ```css
-.cm-s-mytheme {
+.CodeMirror.cm-s-mytheme {
   --cm-atom       : hsl(39, 67%, 69%);
   --cm-attribute  : hsl(39, 67%, 69%);
   --cm-background : hsl(220, 10%, 18%);
@@ -71,7 +71,7 @@ async function setStyle(documentOrShadowroot, css) {
 async function main() {
   await setStyle(document, darkCSS)
   CodeMirror(element)
-  
+
   // await setStyle(document, liteCSS)
 }
 

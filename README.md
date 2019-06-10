@@ -38,8 +38,8 @@ The same can be acheived with [Constructable Stylesheets](https://wicg.github.io
 ```css
 /* lite.css */
 .CodeMirror {
-  --cm-atom       : hsl(39, 67%, 69%);
-  --cm-attribute  : hsl(39, 67%, 69%);
+  --cm-atom       : hsl(41, 99%, 30%);
+  --cm-attribute  : hsl(41, 99%, 30%);
   /* etc. */
 }
 ```

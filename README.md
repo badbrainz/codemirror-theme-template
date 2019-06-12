@@ -7,6 +7,8 @@ Create a CodeMirror syntax theme based on a set of CSS variables.
 ## Instructions
 Specify your colors (see *variables.css*):
 ```css
+/* dark.css */
+
 .CodeMirror.cm-s-dark {
   --cm-atom       : hsl(39, 67%, 69%);
   --cm-attribute  : hsl(39, 67%, 69%);

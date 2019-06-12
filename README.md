@@ -48,7 +48,7 @@ async function main() {
 
   node.attachShadow({ mode: 'open' })
   node.shadowRoot.adoptedStyleSheets = [await sheet]
-  node.setAttribute('data-theme-dark')
+  node.setAttribute('data-theme-dark', '')
 
   CodeMirror(node.shadowRoot)
 }

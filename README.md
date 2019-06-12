@@ -7,7 +7,7 @@ Create a CodeMirror syntax theme based on a set of CSS variables.
 ## Instructions
 Specify your colors (see *variables.css*):
 ```css
-.CodeMirror.cm-s-mytheme {
+.CodeMirror.cm-s-dark {
   --cm-atom       : hsl(39, 67%, 69%);
   --cm-attribute  : hsl(39, 67%, 69%);
   --cm-background : hsl(220, 10%, 18%);
@@ -20,59 +20,35 @@ Specify your colors (see *variables.css*):
 Initialize CodeMirror:
 ```js
 CodeMirror(element, {
-  'theme': 'mytheme'
+  theme: 'dark'
 })
 ```
 ----
-The same can be acheived with [Constructable Stylesheets](https://wicg.github.io/construct-stylesheets/).
-
-
+Theme toggling with Shadow DOM and CSS host-context:
 ```css
 /* dark.css */
-.CodeMirror {
-  --cm-atom       : hsl(39, 67%, 69%);
-  --cm-attribute  : hsl(39, 67%, 69%);
-  /* etc. */
-}
-```
-```css
-/* lite.css */
-.CodeMirror {
-  --cm-atom       : hsl(41, 99%, 30%);
-  --cm-attribute  : hsl(41, 99%, 30%);
-  /* etc. */
+
+:host-context([data-theme-dark]) .CodeMirror {
+  /* specify dark colors. */
 }
 ```
 ```js
-// Load files into CSSStyleSheet objects
-function importStyles(urls) {
-  const sheet = new CSSStyleSheet()
-  const css = [styles].flat().map(url => `@import url("${url}");`).join('\n')
-  return sheet.replace(css)
-}
-
-// Create reusable css
-let darkCSS = importStyles('/dark.css')
-let liteCSS = importStyles('/lite.css')
-let baseCSS = importStyles([
-  '/libs/codemirror/lib/codemirror.css',
-  '/variables.css',
-  '/tokens.css'
-])
-
-// Swap colors by changing 'adoptedStyleSheets'
-async function setStyle(documentOrShadowroot, css) {
-  documentOrShadowroot.adoptedStyleSheets = [
-    await baseCSS,
-    await css
-  ]
-}
-
 async function main() {
-  await setStyle(document, darkCSS)
-  CodeMirror(element)
+  const node = document.body
 
-  // await setStyle(document, liteCSS)
+  let sheet = new CSSStyleSheet()
+  sheet = await sheet.replace(`
+    @import url("/codemirror/lib/codemirror.css");
+    @import url("/variables.css");
+    @import url("/tokens.css");
+    @import url("/dark.css");
+  `)
+
+  node.attachShadow({ mode: 'open' })
+  node.shadowRoot.adoptedStyleSheets = [await sheet]
+  node.setAttribute('data-theme-dark')
+
+  CodeMirror(node.shadowRoot)
 }
 
 main()

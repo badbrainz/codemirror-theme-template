@@ -106,6 +106,7 @@
 
 .CodeMirror-gutters {
   background-color: var(--cm-gutters);
+  border-right-color: var(--cm-gutter-border);
 }
 .CodeMirror-linenumber {
   color: var(--cm-linenumber);

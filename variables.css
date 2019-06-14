@@ -60,3 +60,9 @@
   --cm-scrollbar-track              : #f7f7f7;
   --cm-scrollbar-thumb              : #bcd;
 }
+
+/* other */
+
+.CodeMirror {
+  --cm-gutter-border: #ddd;
+}

@@ -51,7 +51,6 @@
   --cm-lint-marker-error            : #f44336;
   --cm-lint-marker-warning          : #ff9800;
   --cm-matchhighlight               : lightgreen;
-  --cm-matchhighlight-outline       : none;
   --cm-selection-highlight-scrollbar: green;
   --cm-cursor-highlight-scrollbar   : #e91e63;
   --cm-trailing-space               : hsl(36, 100%, 75%);

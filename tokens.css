@@ -141,7 +141,6 @@
 
 .CodeMirror .cm-matchhighlight:not(.CodeMirror-selectedtext) {
   background-color: var(--cm-matchhighlight);
-  box-shadow: var(--cm-matchhighlight-outline);
 }
 .CodeMirror-selection-highlight-scrollbar {
   background-color: var(--cm-selection-highlight-scrollbar);

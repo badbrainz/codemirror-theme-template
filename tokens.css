@@ -111,14 +111,8 @@
 .CodeMirror-linenumber {
   color: var(--cm-linenumber);
 }
-.CodeMirror-activeline .CodeMirror-linenumber {
-  color: var(--cm-linenumber-active);
-}
-.CodeMirror-activeline .CodeMirror-activeline-background {
-  background-color: var(--cm-line-active);
-}
 
-/* highlights */
+/* text */
 
 .CodeMirror-selected {
   background: var(--cm-selected);
@@ -126,6 +120,9 @@
 .CodeMirror-focused .CodeMirror-selected {
   background: var(--cm-selected-focused);
 }
+
+/* addon/edit */
+
 .CodeMirror-matchingbracket {
   color: var(--cm-matching-bracket) !important;
 }
@@ -133,7 +130,16 @@
   color: var(--cm-nonmatching-bracket) !important;
 }
 
-/* addons, modes etc. */
+/* addon/selection */
+
+.CodeMirror-activeline .CodeMirror-linenumber {
+  color: var(--cm-linenumber-active);
+}
+.CodeMirror-activeline .CodeMirror-activeline-background {
+  background-color: var(--cm-line-active);
+}
+
+/* addon/edit  */
 
 .CodeMirror .cm-trailingspace {
   background-color: var(--cm-trailing-space);
@@ -145,6 +151,8 @@
 .CodeMirror-selection-highlight-scrollbar {
   background-color: var(--cm-selection-highlight-scrollbar);
 }
+
+/* addon/lint */
 
 .CodeMirror-lint-error {
   background-color: var(--cm-lint-error);
@@ -165,7 +173,7 @@
   border-bottom-color: var(--cm-lint-marker-warning);
 }
 
-/* scroll */
+/* addon/scroll */
 
 .CodeMirror-simplescroll-horizontal,
 .CodeMirror-simplescroll-vertical,
@@ -175,10 +183,7 @@
 }
 
 .CodeMirror-simplescroll-horizontal div,
-.CodeMirror-simplescroll-vertical div {
-  background-color: var(--cm-scrollbar-thumb);
-}
-
+.CodeMirror-simplescroll-vertical div,
 .CodeMirror-overlayscroll-horizontal div,
 .CodeMirror-overlayscroll-vertical div {
   background-color: var(--cm-scrollbar-thumb);

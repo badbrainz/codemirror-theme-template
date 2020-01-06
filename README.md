@@ -22,4 +22,5 @@ CodeMirror(element, {
 **Visit the HTML page and make live edits to `variables.css` using your browser's DevTools**
 * From the _Sources_ tab, select _Add folder to workspace_.
 * To revert changes, enable the _Changes_ tab in the toolbar.
+
 ![sc1](https://user-images.githubusercontent.com/10160581/71793601-51d92d80-2ff2-11ea-8e02-a927fb612439.png)

@@ -26,9 +26,8 @@ CodeMirror(element, {
 3. Click the **Sources** tab.
 4. Click the **Overrides** tab.
 5. Click **Select folder for overrides**.
-6. Click **Add folder to workspace**.
-7. Select the project folder.
-8. Click **Allow** to give DevTools read/write access to the directory.
+6. Select the project folder.
+7. Click **Allow** to give DevTools read/write access to the directory.
 
 **Step 4 (optional): Track changes**
 1. Expand the bottom drawer.

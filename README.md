@@ -1,17 +1,18 @@
 # codemirror-theme-template
 Create a CodeMirror syntax theme based on a set of CSS variables.
+
+![sc1](https://user-images.githubusercontent.com/10160581/71793601-51d92d80-2ff2-11ea-8e02-a927fb612439.png)
+
 ## Instructions
-**Download and extract CodeMirror**
+**Step 1: Download and extract CodeMirror**
 
 https://codemirror.net/doc/releases.html
 
-**Create an HTML file**
+**Step 2: Setup a CodeMirror instance**
 ```html
 <link rel="stylesheet" href="variables.css">
 <link rel="stylesheet" href="tokens.css">
 ```
-
-**Create a JavaScript file**
 ```js
 CodeMirror(element, {
   lineNumbers: true,
@@ -19,8 +20,19 @@ CodeMirror(element, {
 })
 ```
 
-**Visit the HTML page and make live edits to `variables.css` using your browser's DevTools**
-* From the _Sources_ tab, select _Filesystem_ > _Add folder to workspace_.
-* To revert changes, enable the _Changes_ tab in the bottom drawer.
+**Step 3: Setup a workspace**
+1. Open a browser tab and visit the HTML page.
+2. Open DevTools (Cmd+Option+J (Mac) or Ctrl+Shift+J (Windows, Linux, Chrome OS)).
+3. Click the **Overrides** tab.
+4. Click **Select folder for overrides**.
+5. Click **Add folder to workspace**.
+6. Select the project folder.
+7. Click **Allow** to give DevTools read/write access to the directory.
 
-![sc1](https://user-images.githubusercontent.com/10160581/71793601-51d92d80-2ff2-11ea-8e02-a927fb612439.png)
+**Step 4 (optional): Track changes**
+1. Expand the bottom drawer.
+2. Click the **Changes** tab.
+
+**Step 5: Edit the CSS variables**
+1. Click the **variables.css** file.
+2. Change the color values using the inline color picker.

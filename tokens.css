@@ -138,6 +138,9 @@
 .CodeMirror-activeline .CodeMirror-activeline-background {
   background-color: var(--cm-line-active);
 }
+.CodeMirror-activeline .CodeMirror-activeline-gutter {
+  background-color: var(--cm-gutter-active);
+}
 
 /* addon/edit  */
 

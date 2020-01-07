@@ -1,7 +1,7 @@
 # codemirror-theme-template
 Create a CodeMirror syntax theme based on a set of CSS variables.
 
-![screenshot](https://user-images.githubusercontent.com/10160581/71861129-244fbb00-30aa-11ea-90bd-d109438adb32.jpg)
+![screenshot](https://user-images.githubusercontent.com/10160581/71879201-5bda5980-30e2-11ea-9d0d-2428b7597cb4.jpg)
 
 ## Getting started
 **Step 1: Setup a project**

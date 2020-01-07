@@ -3,21 +3,20 @@ Create a CodeMirror syntax theme based on a set of CSS variables.
 
 ![screenshot](https://user-images.githubusercontent.com/10160581/71861129-244fbb00-30aa-11ea-90bd-d109438adb32.jpg)
 
-## Instructions
-**Step 1: Download and extract CodeMirror**
-
-https://codemirror.net/doc/releases.html
+## Getting started
+**Step 1: Setup a project**
+1. Clone the Git repository.
+2. Download and extract CodeMirror. https://codemirror.net/doc/releases.html
 
 **Step 2: Setup a CodeMirror instance**
 ```html
-<link rel="stylesheet" href="variables.css">
-<link rel="stylesheet" href="tokens.css">
-```
-```js
-CodeMirror(element, {
-  lineNumbers: true,
-  // etc...
-})
+<link rel="stylesheet" href="codemirror/codemirror.css">
+<link rel="stylesheet" href="codemirror-theme-template/variables.css">
+<link rel="stylesheet" href="codemirror-theme-template/tokens.css">
+<script src="codemirror/codemirror.js"></script>
+<script>
+CodeMirror(element, options)
+</script>
 ```
 
 **Step 3: Setup a workspace**
@@ -26,7 +25,7 @@ CodeMirror(element, {
 3. Switch to the **Sources** panel.
 4. Click the **Overrides** tab.
 5. Click **Select folder for overrides**.
-6. Select the project folder.
+6. Select a folder where your work will be saved.
 7. Click **Allow** to give DevTools read/write access to the directory.
 
 **Step 4 (optional): Track changes**

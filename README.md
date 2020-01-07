@@ -38,3 +38,4 @@ CodeMirror(element, {
 2. Open a context-menu for the **variables.css** file.
 3. Click **Open in Sources panel**.
 3. Change the color values using the inline color picker.
+4. Save your work.

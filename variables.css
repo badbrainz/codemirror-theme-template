@@ -64,4 +64,5 @@
 
 .CodeMirror {
   --cm-gutter-border: #ddd;
+  --cm-gutter-active: #e8f2ff;
 }
